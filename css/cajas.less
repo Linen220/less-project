@@ -7,13 +7,13 @@
 
 .caja {
     max-width: 430px;
+    background-color: if(@dark-mode,@color-secundario,@color-claro);
     .sombra-caja();
     &__contenido {
         padding: 25px;
-        background-color: @color-claro;
     }
     span {
-        color: @color-secundario;
+        color: if(@dark-mode,@color-claro,@color-secundario);
         .oswald();
     }
     a {
